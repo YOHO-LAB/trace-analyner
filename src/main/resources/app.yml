@@ -1,0 +1,20 @@
+kafka:
+  topic: sleuth
+  brokers: 127.0.0.1:9092
+  group: trace-analyzer
+
+
+es:
+  cluster: elasticsearch-cluster
+  hosts:
+   - server6:9200
+  index: zipkin
+  indexShards: 3
+  indexReplicas: 1
+
+spark:
+  duration: 60
+
+hbase:
+  zkquorum: 192.166.80.5
+
